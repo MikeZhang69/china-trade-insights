@@ -37,6 +37,7 @@ const OutlookSection = () => {
         "Currency appreciation pressure toward 6.85-6.90 RMB/USD",
         "15th Five-Year Plan faces existential consumption crisis",
         "Export-to-grow model hitting structural limits",
+      ].map((_, index) => t(`outlook2030Item${index + 1}`)),
       ],
     },
   ];
