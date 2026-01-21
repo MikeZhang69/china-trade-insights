@@ -52,6 +52,12 @@ export const translations = {
     tradeFlowAnalysis: "Trade Flow Analysis",
     connectorEconomy: "The Connector Economy",
     geographicDescription: "Exports to the U.S. fell 20%, yet total exports rose. The solution? Strategic transshipment through ASEAN partners.",
+    intermediateGoods: "Intermediate Goods",
+    assemblyRelabeling: "Assembly & Re-labeling",
+    finishedGoods: "Finished Goods",
+    chipsTextiles: "Chips, Textiles, Components",
+    globalMarket: "Global Market",
+    bypassingTariffs: "Bypassing Direct Tariffs",
     
     // Countries/Regions
     china: "China",
@@ -180,6 +186,12 @@ export const translations = {
     tradeFlowAnalysis: "贸易流向分析",
     connectorEconomy: "连接器经济",
     geographicDescription: "对美出口下降20%，但总出口却上升。解决方案？通过东盟伙伴进行战略转运。",
+    intermediateGoods: "中间产品",
+    assemblyRelabeling: "组装与重新标记",
+    finishedGoods: "成品",
+    chipsTextiles: "芯片、纺织品、零部件",
+    globalMarket: "全球市场",
+    bypassingTariffs: "绕过直接关税",
     
     // Countries/Regions
     china: "中国",

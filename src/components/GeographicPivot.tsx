@@ -5,31 +5,31 @@ import SectionHeader from "./SectionHeader";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight, Ship, MapPin } from "lucide-react";
 
-const flowData = [
-  {
-    from: "China",
-    to: "ASEAN",
-    label: "Intermediate Goods",
-    subLabel: "Chips, Textiles, Components",
-  },
-  {
-    from: "ASEAN",
-    to: "Global Market",
-    label: "Assembly & Re-labeling",
-    subLabel: "Vietnam, Thailand",
-  },
-  {
-    from: "Global Market",
-    to: "USA/EU",
-    label: "Finished Goods",
-    subLabel: "Bypassing Direct Tariffs",
-  },
-];
-
 const GeographicPivot = () => {
   const { t } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const flowData = [
+    {
+      from: t('china'),
+      to: t('asean'),
+      label: t('intermediateGoods'),
+      subLabel: t('chipsTextiles'),
+    },
+    {
+      from: t('asean'),
+      to: t('globalMarket'),
+      label: t('assemblyRelabeling'),
+      subLabel: t('vietnam') + ", " + t('thailand'),
+    },
+    {
+      from: t('globalMarket'),
+      to: t('usa') + "/" + t('eu'),
+      label: t('finishedGoods'),
+      subLabel: t('bypassingTariffs'),
+    },
+  ];
 
   return (
     <section className="py-20 md:py-32 bg-muted/20 relative" ref={ref}>
