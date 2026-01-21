@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { AlertTriangle, TrendingUp, Scale, Globe2 } from "lucide-react";
+import { AlertTriangle, Scale, Globe2 } from "lucide-react";
 
 const OutlookSection = () => {
   const { t } = useLanguage();
@@ -76,7 +76,6 @@ const OutlookSection = () => {
           ))}
         </div>
 
-        {/* Conclusion quote */}
         <motion.div
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}
