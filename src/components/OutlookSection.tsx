@@ -2,49 +2,51 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import SectionHeader from "./SectionHeader";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { AlertTriangle, TrendingUp, Scale, Globe2 } from "lucide-react";
 
-const implications = [
-  {
-    icon: AlertTriangle,
-    region: "Global Backlash",
-    items: [
-      "EU investigating anti-dumping measures on Chinese EVs",
-      "Brazil, Indonesia, Turkey imposing protectionist measures",
-      "U.S. universal tariffs of 10-60%, avg. 57.6%",
-    ],
-  },
-  {
-    icon: Scale,
-    region: "The Paradox",
-    items: [
-      "Surplus exceeds Saudi Arabia's entire GDP",
-      'A "recessionary surplus" - expanding because China buys less',
-      "34% of high-growth sector firms operating at a loss",
-    ],
-  },
-  {
-    icon: Globe2,
-    region: "2030 Outlook",
-    items: [
-      "Currency appreciation pressure toward 6.85-6.90 RMB/USD",
-      "15th Five-Year Plan faces existential consumption crisis",
-      "Export-to-grow model hitting structural limits",
-    ],
-  },
-];
-
 const OutlookSection = () => {
+  const { t } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const implications = [
+    {
+      icon: AlertTriangle,
+      region: t('globalBacklash'),
+      items: [
+        "EU investigating anti-dumping measures on Chinese EVs",
+        "Brazil, Indonesia, Turkey imposing protectionist measures",
+        "U.S. universal tariffs of 10-60%, avg. 57.6%",
+      ],
+    },
+    {
+      icon: Scale,
+      region: t('theParadox'),
+      items: [
+        "Surplus exceeds Saudi Arabia's entire GDP",
+        'A "recessionary surplus" - expanding because China buys less',
+        "34% of high-growth sector firms operating at a loss",
+      ],
+    },
+    {
+      icon: Globe2,
+      region: t('outlook2030'),
+      items: [
+        "Currency appreciation pressure toward 6.85-6.90 RMB/USD",
+        "15th Five-Year Plan faces existential consumption crisis",
+        "Export-to-grow model hitting structural limits",
+      ],
+    },
+  ];
 
   return (
     <section className="py-20 md:py-32 bg-background relative" ref={ref}>
       <div className="container mx-auto px-4">
         <SectionHeader
-          label="Future Implications"
-          title="The Road Ahead"
-          description="The surplus of 2025 is likely the high-water mark of globalization before the tide of fragmentation fully recedes."
+          label={t('outlookLabel')}
+          title={t('outlookTitle')}
+          description={t('outlookDescription')}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
