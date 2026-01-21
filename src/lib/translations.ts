@@ -14,6 +14,12 @@ export const translations = {
     historicalEvolution: "Historical Evolution",
     theSurge: "The Surge: 2018-2025",
     timelineDescription: "Despite the U.S.-China trade war beginning in 2018, China's trade surplus paradoxically entered a new expansionary phase, nearly quadrupling in seven years.",
+    tradeWarBegins: "Trade war begins",
+    stabilization: "Stabilization", 
+    pandemicOnset: "Pandemic onset",
+    postPandemicSurge: "Post-pandemic surge",
+    recordHigh: "Record high (at time)",
+    trillionThreshold: "Trillion threshold",
     
     // Sectoral Section
     sectoralTransformation: "Sectoral Transformation",
@@ -46,6 +52,17 @@ export const translations = {
     tradeFlowAnalysis: "Trade Flow Analysis",
     connectorEconomy: "The Connector Economy",
     geographicDescription: "Exports to the U.S. fell 20%, yet total exports rose. The solution? Strategic transshipment through ASEAN partners.",
+    
+    // Countries/Regions
+    china: "China",
+    asean: "ASEAN",
+    usa: "USA",
+    eu: "EU",
+    africa: "Africa",
+    vietnam: "Vietnam",
+    thailand: "Thailand",
+    malaysia: "Malaysia",
+    singapore: "Singapore",
     
     // Drivers Section
     driversLabel: "Structural Analysis",
@@ -84,6 +101,23 @@ export const translations = {
     theParadox: "The Paradox",
     outlook2030: "2030 Outlook",
     
+    // Outlook Details
+    euAntiDumping: "EU investigating anti-dumping measures on Chinese EVs",
+    protectionistMeasures: "Brazil, Indonesia, Turkey imposing protectionist measures",
+    usTariffs: "U.S. universal tariffs of 10-60%, avg. 57.6%",
+    surplusVsGdp: "Surplus exceeds Saudi Arabia's entire GDP",
+    recessionarySurplus: "A \"recessionary surplus\" - expanding because China buys less",
+    firmLosses: "34% of high-growth sector firms operating at a loss",
+    currencyPressure: "Currency appreciation pressure toward 6.85-6.90 RMB/USD",
+    fiveYearPlan: "15th Five-Year Plan faces existential consumption crisis",
+    exportLimits: "Export-to-grow model hitting structural limits",
+    
+    // Footer
+    footerTitle: "The Great Divergence",
+    footerDescription: "An analysis of China's historic $1.2 trillion trade surplus in 2025 and its implications for global trade. Data compiled from AP News, IMF, Chinese Customs Administration, and other authoritative sources.",
+    footerDate: "January 2026",
+    footerLabel: "Geoeconomic Analysis",
+    
     // Conclusion Quote
     conclusionQuote: "China's leaders exported their surplus demand problem rather than solving it through consumption promotion.",
     conclusionAttribution: "— Analysis of the $1.2 Trillion Paradox",
@@ -108,6 +142,12 @@ export const translations = {
     historicalEvolution: "历史演变",
     theSurge: "激增期：2018-2025",
     timelineDescription: "尽管中美贸易战于2018年开始，但中国的贸易顺差却矛盾地进入了新的扩张阶段，七年内增长了近四倍。",
+    tradeWarBegins: "贸易战开始",
+    stabilization: "稳定期",
+    pandemicOnset: "疫情爆发",
+    postPandemicSurge: "疫后激增",
+    recordHigh: "当时创纪录",
+    trillionThreshold: "万亿门槛",
     
     // Sectoral Section
     sectoralTransformation: "行业转型",
@@ -140,6 +180,17 @@ export const translations = {
     tradeFlowAnalysis: "贸易流向分析",
     connectorEconomy: "连接器经济",
     geographicDescription: "对美出口下降20%，但总出口却上升。解决方案？通过东盟伙伴进行战略转运。",
+    
+    // Countries/Regions
+    china: "中国",
+    asean: "东盟",
+    usa: "美国",
+    eu: "欧盟",
+    africa: "非洲",
+    vietnam: "越南",
+    thailand: "泰国",
+    malaysia: "马来西亚",
+    singapore: "新加坡",
     
     // Drivers Section
     driversLabel: "结构性分析",
@@ -177,6 +228,23 @@ export const translations = {
     globalBacklash: "全球反弹",
     theParadox: "悖论",
     outlook2030: "2030年展望",
+    
+    // Outlook Details
+    euAntiDumping: "欧盟调查中国电动汽车反倾销措施",
+    protectionistMeasures: "巴西、印尼、土耳其实施保护主义措施",
+    usTariffs: "美国普遍关税10-60%，平均57.6%",
+    surplusVsGdp: "顺差超过沙特阿拉伯整个GDP",
+    recessionarySurplus: "衰退性顺差——因中国购买减少而扩大",
+    firmLosses: "高增长行业34%的企业亏损经营",
+    currencyPressure: "货币升值压力向6.85-6.90人民币/美元",
+    fiveYearPlan: "十五五规划面临存在性消费危机",
+    exportLimits: "出口增长模式触及结构性极限",
+    
+    // Footer
+    footerTitle: "大分化",
+    footerDescription: "对中国2025年创纪录的1.2万亿美元贸易顺差及其对全球贸易影响的分析。数据来源于美联社、国际货币基金组织、中国海关总署等权威机构。",
+    footerDate: "2026年1月",
+    footerLabel: "地缘经济分析",
     
     // Conclusion Quote
     conclusionQuote: "中国领导人将过剩需求问题出口到海外，而不是通过促进消费来解决问题。",
