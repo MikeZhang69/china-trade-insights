@@ -5,10 +5,14 @@ import NewThreeSection from "@/components/NewThreeSection";
 import GeographicPivot from "@/components/GeographicPivot";
 import OutlookSection from "@/components/OutlookSection";
 import Footer from "@/components/Footer";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <div className="fixed top-4 right-4 z-50">
+        <LanguageSwitcher />
+      </div>
       <HeroSection />
       <TimelineChart />
       <DriversSection />

@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
 import { TrendingUp, Globe2, Factory } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center hero-glow overflow-hidden">
       {/* Background pattern */}
@@ -41,21 +44,19 @@ const HeroSection = () => {
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-sm text-muted-foreground font-medium">
-              January 2026 Analysis
+              {t('analysisDate')}
             </span>
           </motion.div>
 
           {/* Main headline */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            The Great
+            {t('heroTitle')}
             <br />
-            <span className="text-gradient-gold">Divergence</span>
+            <span className="text-gradient-gold">{t('heroTitleHighlight')}</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-            China's historic trade surplus of <span className="text-primary font-semibold">$1.2 trillion</span> in 2025 
-            marks an unprecedented milestone in global trade — the first time any nation has exceeded the 
-            trillion-dollar threshold. This is the anatomy of an economic paradox.
+            {t('heroDescription')}
           </p>
 
           {/* Main stat display */}
@@ -76,7 +77,7 @@ const HeroSection = () => {
               <span className="text-primary text-2xl md:text-4xl font-mono">T</span>
             </div>
             <span className="data-label text-muted-foreground mt-4">
-              2025 Trade Surplus
+              {t('tradeSurplus')}
             </span>
           </motion.div>
 
@@ -93,7 +94,7 @@ const HeroSection = () => {
               </div>
               <div className="text-left">
                 <p className="font-mono text-2xl font-bold text-success">+20%</p>
-                <p className="text-sm text-muted-foreground">YoY Growth</p>
+                <p className="text-sm text-muted-foreground">{t('yoyGrowth')}</p>
               </div>
             </div>
 
@@ -103,7 +104,7 @@ const HeroSection = () => {
               </div>
               <div className="text-left">
                 <p className="font-mono text-2xl font-bold text-foreground">~10%</p>
-                <p className="text-sm text-muted-foreground">of China's GDP</p>
+                <p className="text-sm text-muted-foreground">{t('chinaGdp')}</p>
               </div>
             </div>
 
@@ -113,7 +114,7 @@ const HeroSection = () => {
               </div>
               <div className="text-left">
                 <p className="font-mono text-2xl font-bold text-foreground">35%</p>
-                <p className="text-sm text-muted-foreground">Global Mfg Output</p>
+                <p className="text-sm text-muted-foreground">{t('globalMfgOutput')}</p>
               </div>
             </div>
           </motion.div>
